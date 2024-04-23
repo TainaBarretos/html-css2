@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento vertical</title>
+
+    <style>
+        #container{
+            background-color: blueviolet;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            height: 92vh;
+            position: relative;
+            padding: 20px;
+        }
+
+        #conteudo{
+            background-color: turquoise;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;
+            width: 200px;
+            height: 200px;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%); 
+            /*Transformação de translação, ou seja, move os componentes, nesse caso, o primeiro valor move os componentes para esquerda e o segundo valor move para cima*/
+
+            /*se fossem valores positivos iriam para direita e para baixo*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="container">
+
+        <article id="conteudo">     
+        </article>
+
+        </section>
+    </main>
+</body>
+</html>
