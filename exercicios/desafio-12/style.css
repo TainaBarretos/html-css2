@@ -78,6 +78,7 @@ section.imagem{
     background-color: rgba(0, 0, 0, 0.444);
     background-attachment: fixed;
     background-size: cover;
+    background-position: right center;
     box-shadow: inset 2px 0px 5px black;
 }
 
