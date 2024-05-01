@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        td.posicao{
+            width: 50px;
+            text-align: center;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        td.cidade{
+            color: rgb(59, 122, 210);
+        }
+
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>População dos municpios da Bahia</h1>
+    <!--ANATOMIA DE TABELAS GRANDES:
+        TABLE
+            CAPTION (uma legenda antes dos dados e títulos)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+        -->
+
+        <table>
+            <caption>é a bahêa</caption> <!--Legenda da tabela, que fica antes dos títulos e dados-->
+
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th> <!--o "scope="col" informa que o título é da coluna-->
+                    <th scope="col">Município</th>
+                    <th scope="col">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="posicao">1</td>
+                    <td class="cidade">Salvador</td>
+                    <td class="num">2 418 005</td>
+                </tr>
+                <tr>
+                    <td class="posicao">2</td>
+                    <td class="cidade">Feira de Santana</td>
+                    <td class="num">616 279</td>
+                </tr>
+                <tr>
+                    <td class="posicao">3</td>
+                    <td class="cidade">Vitória da Conquista</td>
+                    <td class="num">370 868</td>
+                </tr>
+                <tr>
+                    <td class="posicao">4</td>
+                    <td class="cidade">Camaçari</td>
+                    <td class="num">299 579</td>
+                </tr>
+                <tr>
+                    <td class="posicao">5</td>
+                    <td class="cidade">Juazeiro</td>
+                    <td class="num">235 816</td>
+                </tr>
+                <tr>
+                    <td class="posicao">6</td>
+                    <td class="cidade">Lauro de Freitas</td>
+                    <td class="num">203 334</td>
+                </tr>
+                <tr>
+                    <td class="posicao">7</td>
+                    <td class="cidade">Itabuna</td>
+                    <td class="num">186 708</td>
+                </tr>
+                <tr>
+                    <td class="posicao">8</td>
+                    <td class="cidade">Ilhéus</td>
+                    <td class="num">178 703</td>
+                </tr>
+                <tr>
+                    <td class="posicao">9</td>
+                    <td class="cidade">Porto Seguro</td>
+                    <td class="num">167 955</td>
+                </tr>
+                <tr>
+                    <td class="posicao">10</td>
+                    <td class="cidade">Barreiras</td>
+                    <td class="num">159 743</td>
+                </tr>
+            </tbody>
+
+            <tfoot>      
+                <tr>
+                    <th scope="row">População Total</th> <!--o "scope="row" informa que o título é da linha-->
+                    <td class="num"><strong>0000000</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+</body>
+</html>
