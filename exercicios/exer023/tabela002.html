@@ -13,11 +13,18 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
             border: 1px solid black;
             padding: 10px;
+        }
+
+        thead > tr > th{
+            position: sticky; /*colávem*/
+            top: -1px;
+            background-color: rgb(101, 93, 93);
         }
 
         caption{
@@ -26,8 +33,17 @@
             font-weight: bold;
         }
 
+        tbody > tr:nth-child(even) {  
+            background-color: lightgray;
+        } /*Vai mudar a cor nas linhas pares*/
+
+        /*tbody > tr:nth-child(odd) {  
+            background-color: lightgray;
+        } Vai mudar a cor nas linhas ímpares*/
+
         td.posicao{
             width: 50px;
+            top: -1px;
             text-align: center;
         }
 
@@ -40,7 +56,7 @@
         }
 
         thead, tfoot{
-            background-color: grey;
+            background-color: rgb(101, 93, 93);
             color: white;
         }
 
@@ -120,6 +136,76 @@
                     <td class="posicao">10</td>
                     <td class="cidade">Barreiras</td>
                     <td class="num">159 743</td>
+                </tr>
+                <tr>
+                    <td class="posicao">11</td>
+                    <td class="cidade">Jequié</td>
+                    <td class="num">158 812</td>
+                </tr>
+                <tr>
+                    <td class="posicao">12</td>
+                    <td class="cidade">Alagoinhas</td>
+                    <td class="num">151 065</td>
+                </tr>
+                <tr>
+                    <td class="posicao">13</td>
+                    <td class="cidade">Teixeira de Freitas</td>
+                    <td class="num">145 223</td>
+                </tr>
+                <tr>
+                    <td class="posicao">14</td>
+                    <td class="cidade">Simões filho</td>
+                    <td class="num">114 441</td>
+                </tr>
+                <tr>
+                    <td class="posicao">15</td>
+                    <td class="cidade">Eunápolis</td>
+                    <td class="num">113 709</td>
+                </tr>
+                <tr>
+                    <td class="posicao">16</td>
+                    <td class="cidade">Paulo Afonso</td>
+                    <td class="num">112 870</td>
+                </tr>
+                <tr>
+                    <td class="posicao">17</td>
+                    <td class="cidade">Luís Eduardo Magalhães</td>
+                    <td class="num">107 909</td>
+                </tr>
+                <tr>
+                    <td class="posicao">18</td>
+                    <td class="cidade">Santo Antônio de Jesus</td>
+                    <td class="num">103 055</td>
+                </tr>
+                <tr>
+                    <td class="posicao">19</td>
+                    <td class="cidade">Guanambi</td>
+                    <td class="num">87 817</td>
+                </tr>
+                <tr>
+                    <td class="posicao">20</td>
+                    <td class="cidade">Valença</td>
+                    <td class="num">85 655</td>
+                </tr>
+                <tr>
+                    <td class="posicao">21</td>
+                    <td class="cidade">Jacobina</td>
+                    <td class="num">82 590</td>
+                </tr>
+                <tr>
+                    <td class="posicao">22</td>
+                    <td class="cidade">Serrinha</td>
+                    <td class="num">80 435</td>
+                </tr>
+                <tr>
+                    <td class="posicao">23</td>
+                    <td class="cidade">Irecê</td>
+                    <td class="num">74 507</td>
+                </tr>
+                <tr>
+                    <td class="posicao">24</td>
+                    <td class="cidade">Senhor do Bonfim</td>
+                    <td class="num">74 490</td>
                 </tr>
             </tbody>
 
