@@ -31,77 +31,82 @@
             background-color: lightgray;
         }
 
-        .filme{
-            color: tomato;
+       col.tomato{
+            background-color: rgb(237, 121, 100);
         }
 
-        .nome{
-            color: blueviolet;
+        col.violet{
+            background-color: rgb(170, 100, 235);
         }
-
     </style>
 </head>
 <body>
 
     <table>
-        <caption> Filmes Favoritos </caption>
-        <thead>
-            <th scope="col">Grupos</th>
-            <th scope="col">Nomes</th>
-            <th colspan="3" scope="colgroup">Filmes</th>
-        </thead>
+        <colgroup>
+            <col class="">
+            <col class="tomato">
+            <col class="violet" span="3">
+        </colgroup>
 
-        <tbody>
+        <caption> Filmes Favoritos </caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
             <tr>
                 <th rowspan="3" scope="rowgroup">Mulheres</th>
-                <td class="nome">Ana Maria Santos</td>
 
-                <td class="filme">Alien</td>
-                <td class="filme">Rambo</td>
-                <td class="filme">Vingadores</td>
+                <td>Ana Maria Santos</td>
 
-                <tr>
-                    <td class="nome">Beatriz Souza</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
 
-                    <td class="filme">Hulk</td>
-                    <td class="filme">Inception</td>
-                    <td class="filme">Batman</td>
-                </tr>
+            <tr>
+                <td>Beatriz Souza</td>
 
-                <tr>
-                    <td class="nome">Claúdia Melo</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
 
-                    <td class="filme">Oblivion</td>
-                    <td class="filme">Matrix</td>
-                    <td class="filme">Big Hero</td>
-                </tr>
+            <tr>
+                <td>Claúdia Melo</td>
+
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
             </tr>
             <tr>
                 <th rowspan="4" scope="rowgroup">Homens</th>
 
-                <tr>
-                    <td class="nome">Bruno Mendonça</td>
+                <td>Bruno Mendonça</td>
 
-                    <td class="filme">Intocáveis</td>
-                    <td class="filme">Amnésia</td>
-                    <td class="filme">Gladiador</td>
-                </tr>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
 
-                <tr>
-                    <td class="nome">Daniel Lourenço</td>
+            <tr>
+                <td>Daniel Lourenço</td>
 
-                    <td class="filme">Wall-E</td>
-                    <td class="filme">Oldboy</td>
-                    <td class="filme">Dangal</td>
-                </tr>
+                <td>Oldboy</td>
+                <td>Wall-E</td>
+                <td>Dangal</td>
+            </tr>
 
-                <tr>
-                    <td class="nome">Fabiano Mota</td>
+            <tr>
+                <td>Fabiano Mota</td>
 
-                    <td class="filme">Star Wars 5</td>
-                    <td class="filme">Taxi Driver</td>
-                    <td class="filme">Toy Story</td>
-                </tr>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
             </tr>
         </tbody>
     </table>
