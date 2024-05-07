@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container{
+            overflow-x: auto; /*overflow significa transbordar, aquilo que transborda, sai da tela*/
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 600px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
 
     </style>
 </head>
@@ -12,11 +38,53 @@
     <h1>Tabelas responsivas</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sit consequuntur fugiat, dolore quos iste itaque non possimus quidem beatae necessitatibus quisquam sequi nam eligendi veritatis. Id aut quasi reiciendis!</p>
 
-    <table>
-        <caption>Produtos</caption>
-
-        
-    </table>
+    <div id="container">
+        <table>
+            <caption>Produtos Disponíveis</caption>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Quantidade</th>
+                        <th>Fornecedor</th>
+                        <th>Código</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>35</td>
+                        <td>1</td>
+                        <td>Gamingtec</td>
+                        <td>5525D25M</td>
+                    </tr>
+                    <tr>
+                        <td>Teclado</td>
+                        <td>270</td>
+                        <td>2</td>
+                        <td>jjgames</td>
+                        <td>MA15GS777</td>
+                    </tr>
+                    <tr>
+                        <td>Headset</td>
+                        <td>80</td>
+                        <td>1</td>
+                        <td>Gamingtec</td>
+                        <td>551AH8912</td>
+                    </tr>
+                    <tr>
+                        <td>Notebook</td>
+                        <td>2800</td>
+                        <td>1</td>
+                        <td>notebookloja</td>
+                        <td>55121FCA90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </table>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero asperiores dolor accusantium eligendi. Animi dignissimos voluptate fuga adipisci commodi magnam libero perferendis temporibus quas consequatur, enim, deleniti veniam voluptas fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cupiditate vel numquam nemo unde officia sit, iste odit ab hic laborum, eum voluptatem maxime nesciunt dolorem ea officiis libero doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor qui dignissimos et enim sequi optio aut! Quis recusandae sapiente incidunt rerum ullam fugit, rem sequi ea laboriosam enim explicabo.</p>
     
 </body>
 </html>
