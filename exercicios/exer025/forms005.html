@@ -11,7 +11,37 @@
     <form action="cadastro.php" method="post">
 
         <div>
+            <label for="iestad">Estado: </label> <!--faz uma lista e o usuário só pode escolher aquelas opções pré-definidas-->
+            <select name="estado" id="iestad">
 
+                <optgroup label="Região Nordeste">
+
+                    <option value="" selected>---Selecione---</option>
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PR">Paraíba</option>
+                    <option value="CE">Ceará</option>
+                    <option value="SG">Sergipe</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="iprof">Profissões: </label> <!--faz uma lista e o usuário pode escolher as opções pré-estabelecidas ou digitar uma que não esteja disponível-->
+            <input type="text" name="prof" id="iprof" list="listprof">
+
+            <datalist id="listprof">
+                <option>Professor</option>
+                <option>Psicólogo</option>
+                <option>Enfermeiro</option>
+                <option>Pedreiro</option>
+                <option>Eletricista</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="imsg">Deixe seu comentário: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
         </div>
         
         <div>
